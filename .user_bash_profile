@@ -1,0 +1,22 @@
+# This file is included in .bash_profile
+# Use it to define user-specific aliases and scripts
+# DO NOT commit this file to master if modified!
+
+alias cdlpm="cd C:/Projects/Lpm/DSP_Software/"
+alias cdgit-lpm="cd N:/Software/ADSP-2191/git-lpm/"
+alias cdstm="cd C:/Projects/Sonstiges/STMWorkshop/"
+alias e="explorer ."
+alias c="code --new-window ."
+alias cw="code --new-window *.code-workspace"
+
+# YOLO!
+source ~/bin/git-yolo.sh
+
+# This activates a feature that allows bash windows resizing
+shopt -s checkwinsize
+
+# Run bashrc
+if [ -f ~/.bashrc ]
+then
+    . ~/.bashrc
+fi
