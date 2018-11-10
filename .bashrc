@@ -42,7 +42,7 @@ host_name='[1;31m'
 user_color
 PROMPT_COMMAND='settitle; get_hostname; history -a;'
 
-export PS1='\n\[\e${cwdcolor}\][$PWD]\[\e${usercolor}\][\u]\[\e${host_name}\]$(__git_ps1) \[\e${inputcolor}\] $ '
+export PS1='\[\e${cwdcolor}\][$PWD]\[\e${usercolor}\][\u]\[\e${host_name}\]$(__git_ps1) \[\e${inputcolor}\] $ '
 
 # Aliases
 alias ls='ls -l --color'
